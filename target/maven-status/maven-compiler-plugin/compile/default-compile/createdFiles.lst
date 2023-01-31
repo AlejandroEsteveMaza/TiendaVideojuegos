@@ -1,0 +1,7 @@
+com\example\tiendavideojuegos\model\Distribuidor.class
+com\example\tiendavideojuegos\service\impl\VideojuegoServiceImpl.class
+com\example\tiendavideojuegos\model\Videojuego.class
+com\example\tiendavideojuegos\TiendavideojuegosApplication.class
+com\example\tiendavideojuegos\service\VideojuegoService.class
+com\example\tiendavideojuegos\controller\ListadoController.class
+com\example\tiendavideojuegos\repository\VideojuegoRepository.class
