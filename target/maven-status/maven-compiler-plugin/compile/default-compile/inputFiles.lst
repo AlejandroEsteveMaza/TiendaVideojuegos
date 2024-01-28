@@ -1,7 +1,7 @@
-C:\Users\0019726\Documents\Alejandro\CursoSpringBootStarters\tiendavideojuegos\src\main\java\com\example\tiendavideojuegos\TiendavideojuegosApplication.java
-C:\Users\0019726\Documents\Alejandro\CursoSpringBootStarters\tiendavideojuegos\src\main\java\com\example\tiendavideojuegos\service\VideojuegoService.java
-C:\Users\0019726\Documents\Alejandro\CursoSpringBootStarters\tiendavideojuegos\src\main\java\com\example\tiendavideojuegos\model\Distribuidor.java
-C:\Users\0019726\Documents\Alejandro\CursoSpringBootStarters\tiendavideojuegos\src\main\java\com\example\tiendavideojuegos\model\Videojuego.java
-C:\Users\0019726\Documents\Alejandro\CursoSpringBootStarters\tiendavideojuegos\src\main\java\com\example\tiendavideojuegos\repository\VideojuegoRepository.java
-C:\Users\0019726\Documents\Alejandro\CursoSpringBootStarters\tiendavideojuegos\src\main\java\com\example\tiendavideojuegos\controller\ListadoController.java
-C:\Users\0019726\Documents\Alejandro\CursoSpringBootStarters\tiendavideojuegos\src\main\java\com\example\tiendavideojuegos\service\impl\VideojuegoServiceImpl.java
+D:\CodingWorkspace\TiendaVideojuegos\src\main\java\com\example\tiendavideojuegos\model\Videojuego.java
+D:\CodingWorkspace\TiendaVideojuegos\src\main\java\com\example\tiendavideojuegos\service\VideojuegoService.java
+D:\CodingWorkspace\TiendaVideojuegos\src\main\java\com\example\tiendavideojuegos\service\impl\VideojuegoServiceImpl.java
+D:\CodingWorkspace\TiendaVideojuegos\src\main\java\com\example\tiendavideojuegos\TiendavideojuegosApplication.java
+D:\CodingWorkspace\TiendaVideojuegos\src\main\java\com\example\tiendavideojuegos\repository\VideojuegoRepository.java
+D:\CodingWorkspace\TiendaVideojuegos\src\main\java\com\example\tiendavideojuegos\controller\ListadoController.java
+D:\CodingWorkspace\TiendaVideojuegos\src\main\java\com\example\tiendavideojuegos\model\Distribuidor.java

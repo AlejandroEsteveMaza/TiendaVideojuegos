@@ -23,7 +23,7 @@
                         <img th:src="${videojuego.imagen_url}">
                         <div class="card-body">
                             <h5 th:text="${videojuego.nombre}" class="card-title"></h5>
-                            <a th:href = "@{/videojuegopordistribuidor(id=${videojuego.distribuidor.id})}" th:text="${videojuego.distribuidor.nombre}" class="badge badge-primary"></a>
+                            <a th:if="${videojuego.distribuidor != null}" th:href="@{/videojuegopordistribuidor(id=${videojuego.distribuidor.id})}" th:text="${videojuego.distribuidor.nombre}" class="badge badge-primary"></a>
                             <p th:text="${videojuego.descripcion}"  class="card-text"></p>
                         </div>
                         <div class="card-footer text-muted"><a href="#" class="btn btn-primary">Ver detalles</a></div>

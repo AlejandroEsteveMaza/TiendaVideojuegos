@@ -37,5 +37,4 @@ public class ListadoController {
          model.addAttribute("lista",listado);
          return "listado";
     }
-    
 }
