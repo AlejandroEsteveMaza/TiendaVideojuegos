@@ -15,6 +15,8 @@ public interface VideojuegoService {
     
     public List<Videojuego> listarVideojuego();
     
-     public List<Videojuego> listarPorDistribuidor(int id);
+    public List<Videojuego> listarPorDistribuidor(int id);
+    
+    public List<Videojuego> listadoPorNombre(String nombre);
     
 }

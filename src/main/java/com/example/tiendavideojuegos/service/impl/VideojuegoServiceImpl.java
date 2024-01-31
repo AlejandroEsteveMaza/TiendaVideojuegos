@@ -31,5 +31,10 @@ public class VideojuegoServiceImpl implements VideojuegoService {
          return videojuegoRepository.findByDistribuidor(id);
     }
 
+	@Override
+	public List<Videojuego> listadoPorNombre(String nombre) {
+		return videojuegoRepository.findByNombreContainingIgnoreCase(nombre);
+	}
+
     
 }
