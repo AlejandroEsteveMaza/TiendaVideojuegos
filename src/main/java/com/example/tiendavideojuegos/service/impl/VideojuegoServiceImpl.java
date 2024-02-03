@@ -36,5 +36,11 @@ public class VideojuegoServiceImpl implements VideojuegoService {
 		return videojuegoRepository.findByNombreContainingIgnoreCase(nombre);
 	}
 
+	@Override
+	public void crearVideojuego(Videojuego videojuego) {
+		videojuegoRepository.save(videojuego);
+		
+	}
+
     
 }

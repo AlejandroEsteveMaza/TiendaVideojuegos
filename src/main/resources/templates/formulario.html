@@ -17,24 +17,24 @@
 		<h2 class="mb-4">Crear Videojuego</h2>
 
 		<!-- Formulario -->
-		<form th:action="@{/guardar}" method="post">
+		<form th:action="@{/videojuego}" method="post">
 
 			<!-- Campo Nombre -->
 			<div class="form-group">
 				<label for="nombre">Nombre:</label>
-				<input type="text" class="form-control" id="nombre" name="nombre" required>
+				<input type="text" class="form-control" name="nombre" required>
 			</div>
 
 			<!-- Campo Descripción -->
 			<div class="form-group">
 				<label for="descripcion">Descripción:</label>
-				<textarea class="form-control" id="descripcion" name="descripcion" rows="3" required></textarea>
+				<textarea class="form-control" name="descripcion" rows="3" required></textarea>
 			</div>
 
 			<!-- Campo URL de Imagen -->
 			<div class="form-group">
 				<label for="imagenUrl">URL de Imagen:</label>
-				<input type="text" class="form-control" id="imagenUrl" name="imagenUrl" required>
+				<input type="text" class="form-control" name="imagen_url" required>
 			</div>
 
 			<!-- Botón de Enviar -->

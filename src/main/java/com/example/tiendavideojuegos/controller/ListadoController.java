@@ -6,10 +6,13 @@ package com.example.tiendavideojuegos.controller;
 
 import com.example.tiendavideojuegos.model.Videojuego;
 import com.example.tiendavideojuegos.service.VideojuegoService;
+
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -49,6 +52,15 @@ public class ListadoController {
     
     @GetMapping("/videojuego")
     public String FormularioVideojuego(){
+        return "formulario";
+    }
+    
+    @PostMapping("/videojuego")
+    public String CrearVideojuego(@Validated Videojuego videojuego, BindingResult result){
+    	if (result.hasErrors()) {
+			return "formulario";
+		}
+    	videojuegoservice.crearVideojuego(videojuego);
         return "formulario";
     }
     

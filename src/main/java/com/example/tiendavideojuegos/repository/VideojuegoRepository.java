@@ -22,4 +22,6 @@ public interface VideojuegoRepository extends JpaRepository<Videojuego, Integer>
     List<Videojuego> findByDistribuidor(int id);
     
     List<Videojuego> findByNombreContainingIgnoreCase(String nombre);
+    
+    Videojuego  save(Videojuego videojuego);
 }

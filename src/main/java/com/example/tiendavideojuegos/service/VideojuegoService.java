@@ -19,4 +19,6 @@ public interface VideojuegoService {
     
     public List<Videojuego> listadoPorNombre(String nombre);
     
+    public void crearVideojuego(Videojuego videojuego);
+    
 }
