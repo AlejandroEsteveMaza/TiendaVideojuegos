@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Crear Videojuego</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+	<div th:replace="fragments/navbar :: navbar"></div>
+
+	<div class="container mt-5">
+		<h2 class="mb-4">Crear Videojuego</h2>
+
+		<!-- Formulario -->
+		<form th:action="@{/guardar}" method="post">
+
+			<!-- Campo Nombre -->
+			<div class="form-group">
+				<label for="nombre">Nombre:</label>
+				<input type="text" class="form-control" id="nombre" name="nombre" required>
+			</div>
+
+			<!-- Campo Descripción -->
+			<div class="form-group">
+				<label for="descripcion">Descripción:</label>
+				<textarea class="form-control" id="descripcion" name="descripcion" rows="3" required></textarea>
+			</div>
+
+			<!-- Campo URL de Imagen -->
+			<div class="form-group">
+				<label for="imagenUrl">URL de Imagen:</label>
+				<input type="text" class="form-control" id="imagenUrl" name="imagenUrl" required>
+			</div>
+
+			<!-- Botón de Enviar -->
+			<button type="submit" class="btn btn-primary">Guardar</button>
+		</form>
+
+	</div>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+
+</body>
+
+</html>

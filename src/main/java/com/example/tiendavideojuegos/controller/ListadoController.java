@@ -46,4 +46,10 @@ public class ListadoController {
         model.addAttribute("lista",listado);
         return "listado";
     }
+    
+    @GetMapping("/videojuego")
+    public String FormularioVideojuego(){
+        return "formulario";
+    }
+    
 }
