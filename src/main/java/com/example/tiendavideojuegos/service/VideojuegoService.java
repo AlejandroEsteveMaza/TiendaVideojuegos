@@ -7,10 +7,6 @@ package com.example.tiendavideojuegos.service;
 import com.example.tiendavideojuegos.model.Videojuego;
 import java.util.List;
 
-/**
- *
- * @author 0019726
- */
 public interface VideojuegoService {
     
     public List<Videojuego> listarVideojuego();

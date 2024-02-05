@@ -12,10 +12,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-/**
- *
- * @author 0019726
- */
+import org.springframework.web.multipart.MultipartFile;
+
 @Entity
 @Table(name = "videojuego")
 public class Videojuego {
@@ -26,6 +24,7 @@ public class Videojuego {
     private String nombre;
     private String descripcion;
     private String imagen_url;
+    //private MultipartFile imagen;
 
     @ManyToOne
     @JoinColumn(name = "distribuidor_id")

@@ -11,10 +11,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-/**
- *
- * @author 0019726
- */
 @Service
 public class VideojuegoServiceImpl implements VideojuegoService {
 
@@ -39,7 +35,6 @@ public class VideojuegoServiceImpl implements VideojuegoService {
 	@Override
 	public void crearVideojuego(Videojuego videojuego) {
 		videojuegoRepository.save(videojuego);
-		
 	}
 
     
