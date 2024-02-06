@@ -7,6 +7,8 @@ package com.example.tiendavideojuegos.service;
 import com.example.tiendavideojuegos.model.Videojuego;
 import java.util.List;
 
+import org.springframework.web.multipart.MultipartFile;
+
 public interface VideojuegoService {
     
     public List<Videojuego> listarVideojuego();
@@ -15,6 +17,6 @@ public interface VideojuegoService {
     
     public List<Videojuego> listadoPorNombre(String nombre);
     
-    public void crearVideojuego(Videojuego videojuego);
+    public void crearVideojuego(Videojuego videojuego, String urlImagen);
     
 }

@@ -10,6 +10,7 @@ import com.example.tiendavideojuegos.service.VideojuegoService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
 @Service
 public class VideojuegoServiceImpl implements VideojuegoService {
@@ -33,7 +34,8 @@ public class VideojuegoServiceImpl implements VideojuegoService {
 	}
 
 	@Override
-	public void crearVideojuego(Videojuego videojuego) {
+	public void crearVideojuego(Videojuego videojuego, String urlImagen) {
+		videojuego.setImagen_url(urlImagen);
 		videojuegoRepository.save(videojuego);
 	}
 

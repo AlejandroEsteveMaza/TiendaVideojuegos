@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.example.tiendavideojuegos.model;
 
 import javax.persistence.Entity;
@@ -11,8 +7,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-
-import org.springframework.web.multipart.MultipartFile;
 
 @Entity
 @Table(name = "videojuego")
@@ -24,25 +18,23 @@ public class Videojuego {
     private String nombre;
     private String descripcion;
     private String imagen_url;
-    //private MultipartFile imagen;
 
     @ManyToOne
     @JoinColumn(name = "distribuidor_id")
     private Distribuidor distribuidor;
-     
-    
+ 
     public Videojuego() {
     }
+    
+    public Videojuego(Integer id, String nombre, String descripcion, String imagen_url, String urlImagen, Distribuidor distribuidor) {
+		this.id = id;
+		this.nombre = nombre;
+		this.descripcion = descripcion;
+		this.imagen_url = imagen_url;
+		this.distribuidor = distribuidor;
+	}
 
-    public Videojuego(Integer id, String nombre, String descripcion, String imagen_url, Distribuidor distribuidor) {
-        this.id = id;
-        this.nombre = nombre;
-        this.descripcion = descripcion;
-        this.imagen_url = imagen_url;
-        this.distribuidor = distribuidor;
-    }
-
-    public Distribuidor getDistribuidor() {
+	public Distribuidor getDistribuidor() {
         return distribuidor;
     }
 
@@ -59,9 +51,6 @@ public class Videojuego {
     public void setId(Integer id) {
         this.id = id;
     }
-
-    
-    
 
     public String getNombre() {
         return nombre;
@@ -86,5 +75,6 @@ public class Videojuego {
     public void setImagen_url(String imagen_url) {
         this.imagen_url = imagen_url;
     }
+    
     
 }
